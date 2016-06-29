@@ -57,6 +57,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <finalName>greeting</finalName>
+                </configuration>
             </plugin>
             <!--This is an example of how to include the project file for use with surefire and failsafe plugins-->
             <plugin>
@@ -72,9 +75,9 @@
                     </excludes>
                     <useSystemClassLoader>false</useSystemClassLoader>
                     <environmentVariables>
-                        <demo.config.url>
-                            config/application.properties
-                        </demo.config.url>
+                        <greeting.config.url>
+                            config/local.greeting.properties
+                        </greeting.config.url>
                     </environmentVariables>
                 </configuration>
             </plugin>
@@ -100,9 +103,9 @@
                                 <include>**/*IntegrationTests.class</include>
                             </includes>
                             <environmentVariables>
-                                <demo.config.url>
-                                    config/application.properties
-                                </demo.config.url>
+                                <greeting.config.url>
+                                    config/local.greeting.properties
+                                </greeting.config.url>
                             </environmentVariables>
                         </configuration>
                     </execution>
