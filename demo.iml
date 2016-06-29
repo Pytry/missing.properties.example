@@ -2,7 +2,15 @@
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="Spring" name="Spring">
-      <configuration />
+      <configuration>
+        <fileset id="spring_boot_my.missing.properties.example.GreetingApplication" name="GreetingApplication" removed="true">
+          <file>file://$MODULE_DIR$/src/main/java/my/missing/properties/example/GreetingApplication.java</file>
+        </fileset>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/main/java/my/missing/properties/example/GreetingApplication.java</file>
+          <file>file://$MODULE_DIR$/config/local.greeting.properties</file>
+        </fileset>
+      </configuration>
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="false">
